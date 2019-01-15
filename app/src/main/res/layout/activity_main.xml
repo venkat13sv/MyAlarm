@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingTop="100dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:text="Alarm Time (24 Hrs)"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/ethr"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Hr"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.17">
+
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etmin"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="Min"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.20" />
+
+        <EditText
+            android:id="@+id/etsec"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:ems="2"
+            android:hint="Sec"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.25" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:text="Alarm Reapt Interval(hh:mm:ss)"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/ithr"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Hr"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.17">
+
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/itmin"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="Min"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.20" />
+
+        <EditText
+            android:id="@+id/itsec"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:ems="2"
+            android:hint="Sec"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.25" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:id="@+id/setAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSetAlarm"
+            android:text="Set Alarm" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:id="@+id/cancelAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickCancelAlarm"
+            android:text="Cancel Alarm" />
+
+    </LinearLayout>
+
+</LinearLayout>
